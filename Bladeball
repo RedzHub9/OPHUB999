@@ -1,6 +1,4 @@
-loadstring(game:HttpGet("https://egorikusa.space/809db042bd039d921d20abea.lua", true))()
-
-
+loadstring(game:HttpGet("https://egorikusa.space/4e781670a69e6f7d671f803a.lua", true))()
 
 
  loadstring(game:HttpGet("https://raw.githubusercontent.com/KSA2LbopceHtudepr0l8lkgGlzJds2hwQhn/Speed-Hub-Main-Releases-B-Y-R-E-N/refs/heads/main/Speed-Hub-Bladeball-Update-Lite-V2.txt"))()
