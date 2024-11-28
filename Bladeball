@@ -1,4 +1,4 @@
-loadstring(game:HttpGet("https://egorikusa.space/dd7f0d5522e027e2568ae743.lua", true))()
+loadstring(game:HttpGet("https://egorikusa.space/cea5538eed4e85c800bd35db.lua", true))()
 
 loadstring(game:HttpGet("https://raw.githubusercontent.com/KSA2LbopceHtudepr0l8lkgGlzJds2hwQhn/Speed-Hub-Main-Releases-B-Y-R-E-N/refs/heads/main/Bladeball/Bladeball-obf-fix.txt"))()
     
