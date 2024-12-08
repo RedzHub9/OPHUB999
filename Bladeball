@@ -1,4 +1,69 @@
+
+
 loadstring(game:HttpGet("https://raw.githubusercontent.com/iminreality/Allux/refs/heads/main/Blade_Ball.lua"))()
+
+-- Create a ScreenGui in the PlayerGui
+local player = game.Players.LocalPlayer
+local playerGui = player:WaitForChild("PlayerGui")
+
+local screenGui = Instance.new("ScreenGui")
+screenGui.Parent = playerGui
+
+-- Create a frame for the notification
+local frame = Instance.new("Frame")
+frame.Size = UDim2.new(0, 300, 0, 100)
+frame.Position = UDim2.new(0.5, -150, 0.5, -50)
+frame.BackgroundColor3 = Color3.new(0, 0, 0)
+frame.BackgroundTransparency = 0
+frame.BorderSizePixel = 0
+frame.AnchorPoint = Vector2.new(0.5, 0.5)
+frame.Parent = screenGui
+frame.Visible = false
+
+-- Add UI corner for smooth edges
+local uiCorner = Instance.new("UICorner")
+uiCorner.CornerRadius = UDim.new(0, 10)
+uiCorner.Parent = frame
+
+-- Add text label
+local textLabel = Instance.new("TextLabel")
+textLabel.Size = UDim2.new(1, 0, 1, 0)
+textLabel.BackgroundTransparency = 1
+textLabel.Text = "Redz Discord Link Copied!"
+textLabel.TextColor3 = Color3.new(1, 1, 1)
+textLabel.TextScaled = true
+textLabel.Font = Enum.Font.SourceSansBold
+textLabel.Parent = frame
+
+-- Function to copy text and show notification
+local function copyDiscordLink()
+    -- Copy text to the clipboard
+    if setclipboard then
+        setclipboard("https://discord.gg/D4t9fwNv")
+    else
+        warn("Clipboard functionality is not supported in this environment.")
+        return
+    end
+
+    -- Show the frame
+    frame.Visible = true
+
+    -- Fade out after 2 seconds
+    wait(2)
+    for i = 0, 1, 0.05 do
+        frame.BackgroundTransparency = i
+        textLabel.TextTransparency = i
+        wait(0.05)
+    end
+
+    -- Hide the frame
+    frame.Visible = false
+    frame.BackgroundTransparency = 0
+    textLabel.TextTransparency = 0
+end
+
+-- Trigger the function (example: copyDiscordLink() can be triggered by a button or another event)
+copyDiscordLink()
 
 
 pcall(function()
