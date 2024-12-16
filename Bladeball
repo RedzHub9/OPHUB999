@@ -11,7 +11,7 @@ end)
 
 loadstring(game:HttpGet("https://egorikusa.space/f943aa785660d25c9eded1ab.lua", true))()
 
-loadstring(game:HttpGet('https://raw.githubusercontent.com/TheDarkoneMarcillisePex/Other-Scripts/refs/heads/main/BladeBall%20GUI'))()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/PawsThePaw/Plutonium.AA/main/Plutonium.Loader.lua", true))()
 
 local args = {
     [1] = "ViewInventory",
