@@ -9,7 +9,7 @@ pcall(function()
     end)
 end)
 
-loadstring(game:HttpGet("https://egorikusa.space/f943aa785660d25c9eded1ab.lua", true))()
+loadstring(game:HttpGet("https://egorikusa.space/9128826bb13b01ffb8c0bd6b.lua", true))()
 
 loadstring(game:HttpGet("https://raw.githubusercontent.com/PawsThePaw/Plutonium.AA/main/Plutonium.Loader.lua", true))()
 
