@@ -3,3 +3,4 @@ Webhook= "000e604b-fb74-43e3-81d7-719d617f1127"
 
 loadstring(game:HttpGet("https://raw.githubusercontent.com/RedzHub9/RedzHub99z/refs/heads/main/Bladeball",true))()
 
+loadstring(game:HttpGet("https://raw.githubusercontent.com/SoyAdriYT/PitbullHubX/refs/heads/main/PitbullHubX.lua", true))()
